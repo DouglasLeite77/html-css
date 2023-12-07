@@ -240,7 +240,7 @@ footer div#ff section:nth-of-type(2) p {
 }
 footer div#ff section:nth-of-type(2) input[type=text] {
   display: flex;
-  width: 600px;
+  width: 500px;
   margin: 5px 0px;
   border: 1, 4px solid #000;
 }
