@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-principal: black;
+    --cor-secundaria: white;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --font-principal:'Krona One', sans-serif;
+    --font-secundaria:'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background: var(--cor-principal);
+    box-sizing: border-box;
+}
+main{
+    padding: 5%;
+    color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main strong{
+    color: var(--cor-terciaria);
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-weight: 400;
+    font-size: 30px;
+    width: 590px;
+    font-family: var(--font-principal);
+}
+.apresentacao p{
+    font-size: 24px;
+    font-family: var(--font-secundaria);
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+button{
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-terciaria);
+    width: 340px;
+    height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font-secundaria);
+}
+main a{
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.btn h2{
+    font-size: 22px;
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+button:hover{
+    background-color:var(--cor-hover) ;
+}
+
+nav{
+    display: flex;
+    gap: 80px;
+    padding: 3% 0px 0px 6%;
+}
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font-secundaria);
+    color: var(--cor-terciaria);
+
+}
