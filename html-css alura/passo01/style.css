@@ -26,6 +26,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 82px
 }
 main strong{
     color: var(--cor-terciaria);
@@ -35,12 +36,13 @@ main strong{
     flex-direction: column;
     gap: 40px;
     font-weight: 400;
-    font-size: 30px;
-    width: 590px;
+    font-size: 1.875rem;
+    width: 50%;
     font-family: var(--font-principal);
+    
 }
 .apresentacao p{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
 }
 .btn{
@@ -53,11 +55,11 @@ main strong{
 button{
     background-color: var(--cor-principal);
     border: 1px solid var(--cor-terciaria);
-    width: 340px;
+    width: 60%;
     height: 60px;
     border-radius: 8px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: var(--font-secundaria);
 }
@@ -68,7 +70,7 @@ main a{
     gap: 8px;
 }
 .btn h2{
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: var(--font-principal);
     font-weight: 400;
 }
@@ -83,8 +85,24 @@ nav{
 }
 header a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--font-secundaria);
     color: var(--cor-terciaria);
 
+}
+.img{
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    main{
+        flex-direction: column-reverse;
+    }
+    .apresentacao{
+        width: auto;
+    }
+    nav{
+        padding: 10% 0px 5% 0px;
+        justify-content: center;
+    }
 }
