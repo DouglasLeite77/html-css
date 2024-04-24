@@ -1,0 +1,11 @@
+:root{
+    --fundo-cinza: #C4C4C4;
+    --fundo-azul: linear-gradient(to right, #002F52, #326589);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
