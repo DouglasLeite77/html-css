@@ -1,11 +1,122 @@
 :root{
     --fundo-cinza: #C4C4C4;
     --fundo-azul: linear-gradient(to right, #002F52, #326589);
-}
+    --texto-laranja: #EB9B00;
+    --texto-azul: #002F52;
+    --texto-branco: #FFFFFF;
 
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+}
+.container__menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    position: relative;
+}
+.menu__hamburguer{
+    width: 36px;
+    height: 24px;
+    background-image: url(./imgs/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.container__menu div:nth-child(2){
+    display: flex;
+    gap: 8px;
+}
+.container__menu div:nth-child(2) img{
+    padding: 4px 8px 8px 8px;
+}
+.container__menu div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.container__menu input {
+    display: none;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 40%;
+    list-style: none;
+    background-color: var(--texto-branco);
+    width: 60vw;
+}
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+.lista-menu__titulo{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--texto-laranja);
+    padding: 1em;
+}
+.lista-menu__item{
+    font-size: 16px;
+    padding: 1em;
+}
+.lista-menu__link{
+    background-image: var(--fundo-azul);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
+/*SECTION PESQUISA -----------------------------------------------------------*/
+
+
+.container__pesquisa{   
+    text-align: center;
+    padding: 32px;
+    background-image: var(--fundo-azul);
+    color: var(--texto-branco);
+}
+.container__pesquisa h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px;
+}
+.texto_pesquisa{
+    font-size: 16px;
+    font-weight: normal;
+}
+.botao_pesquisa{
+    display: inline-flex;
+    border: 1px solid white;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 10px 44px;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+
+/*SECTION 01 MAIN -----------------------------------------------------------*/
+
+.container__primaria{
+    background-color: var(--fundo-cinza);
+    height: 100vh;
+    margin-top: 20px;
+}
+.container__primaria h1{
+    background-color: var(--texto-branco);
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 18px;
+    color: var(--texto-laranja);
 }
