@@ -30,7 +30,12 @@ body{
     background-image: url(./imgs/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.img_header{
+    display: flex;
+    gap: 1em;
 }
 .container__menu div:nth-child(2){
     display: flex;
@@ -123,6 +128,7 @@ body{
 .container__primaria{
     background-color: var(--fundo-cinza);
     padding-bottom: 0.5em;
+    margin-top: 1em;
 }
 .container__primaria h1{
     background-color: var(--texto-branco);
@@ -263,4 +269,120 @@ hr{
 footer h2{
     padding: 1em 1.5em;
     font-size: 16px;
+}
+.nome_site, .opcoes{
+    display: none;
+}
+.lista_item, .lista_titulo{
+    display: none;
+}
+
+
+/*Media Laptop -----------------------------------------------------*/
+@media (min-width: 1024px) {
+    .menu__hamburguer, .container__botao{
+        display: none;
+    }
+    .nome_site{
+        display: block;
+        font-size: 30px;
+    }
+    .opcoes{
+        display: flex;
+    }
+    .img_header{
+        gap: 3em;
+    }
+    .item_opcao{
+        list-style: none;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+    .opcoes_link{
+        text-decoration: none;
+    }
+    .img_laptop{
+        display: none;
+    }
+    .opção_botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+        left: 40%;
+    }
+    .container__pesquisa h2{
+        font-size: 36px;
+    }
+    .botao{
+        font-size: 16px;
+        width: 50%;
+    }
+    .botao::placeholder{
+        background-position: 6em;
+    }
+    .container__primaria h1{
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+    .container__card{
+        margin: 2em auto;
+        width: 50%;
+    }
+    .ancora{
+        width: 34%;
+    }
+    .titulo_topico{
+        font-size: 24px;
+    }
+    .ancora_topico{
+        font-size: 24px;
+    }
+    .container__novidades h2 {
+        font-size: 24px;
+        width: 80%;
+    }
+    .container__novidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5em;
+    }
+    .botao_novidades{
+        width: 40%;
+    }
+    .container__novidades p{
+        width: 65%;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        margin: 2.5em 0 ;
+    }
+    footer h2{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .lista_item{
+        display: flex;
+        align-items: center; 
+        color: #474646;
+        margin: 0.6em 0;
+    }
+    .lista_titulo{
+        list-style: none;
+        color: #858585;
+        margin-bottom: 1em;
+    }
+    .lista_link{
+        text-decoration: none;
+        margin-left: 0.5em;
+    }
 }
