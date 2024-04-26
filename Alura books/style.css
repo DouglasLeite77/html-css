@@ -21,8 +21,15 @@ body{
 .container__menu{
     display: flex;
     justify-content: space-between;
-    padding: 16px 24px;
     position: relative;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    background-color: var(--texto-branco);
+    width: 60vw;
 }
 .menu__hamburguer{
     width: 36px;
@@ -30,12 +37,17 @@ body{
     background-image: url(./imgs/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+}
+.label{
+    padding: 1.5em;
 }
 .img_header{
     display: flex;
     gap: 1em;
+}
+.img_header p {
+    display: none;
 }
 .container__menu div:nth-child(2){
     display: flex;
@@ -52,18 +64,16 @@ body{
 .container__menu input {
     display: none;
 }
-.lista-menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 40%;
-    list-style: none;
-    background-color: var(--texto-branco);
-    width: 60vw;
-}
 .container__botao:checked ~ .lista-menu{
     display: block;
 }
+.container__botao:checked ~ .label>.menu__hamburguer{
+    background: url(./imgs/Menu\ Aberto.svg);
+}
+.container__botao:checked ~ .label{
+    background: var(--fundo-azul);
+}
+
 .lista-menu__titulo{
     font-size: 16px;
     font-weight: bold;
@@ -283,6 +293,20 @@ footer h2{
     .menu__hamburguer, .container__botao{
         display: none;
     }
+    .opção_botao:checked ~ .opções_menu{
+        background: var(--fundo-azul);
+        color: var(--texto-branco);
+    }
+    .lista-menu__item:hover{
+        background: var(--fundo-azul);
+    }
+    .lista-menu__item:hover>.lista-menu__link{
+        -webkit-text-fill-color: var(--texto-branco);
+        text-decoration: none;
+    }
+    .container__menu{
+        margin: 21px 80px;
+    }
     .nome_site{
         display: block;
         font-size: 30px;
@@ -307,7 +331,6 @@ footer h2{
     .opção_botao:checked ~ .lista-menu{
         display: block;
         width: auto;
-        left: 40%;
     }
     .container__pesquisa h2{
         font-size: 36px;
@@ -384,5 +407,61 @@ footer h2{
     .lista_link{
         text-decoration: none;
         margin-left: 0.5em;
+    }
+
+    /*Media Desktop -----------------------------------------------------*/
+
+    @media screen and (min-width: 1728px) {
+        .img_header{
+            gap: 1em  ;
+            align-items: center;
+        }
+        .img_header p {
+            font-size: 20px;
+            white-space: nowrap;
+        }
+        .section_desktop{
+            display: flex;
+            align-items: center;
+            margin: 0 15vw 3em 15vw;
+        }
+        .primeiro_texto{
+            font-size: 32px;
+        }
+        .primeiro_card{
+            gap: 48px;
+        }
+        .container__card{
+            margin: 0;
+            margin-top: 2em;
+            width: 65%;
+            margin-left: 3em;
+        }
+        .swiper {
+            width: 70%;
+        }
+        .swiper-pagination{
+            margin: 1em 0;
+        }
+        .ancora{
+            font-size: 16px;
+        }
+        .topico_desktop{
+            padding: 4em 26vw;
+        }
+        .titulo_topico{
+            font-size: 32px;
+            font-weight: lighter;
+            padding-top: 0;
+        }
+        .container__novidades{
+            margin: 4em 20vw;
+        }
+        .container__novidades h2{
+            white-space: nowrap;
+        }
+        .botao{
+            width: 30%;
+        } 
     }
 }
