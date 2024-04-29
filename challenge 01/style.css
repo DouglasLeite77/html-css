@@ -8,7 +8,7 @@
     --bg-principal: #051D3B;
     --bg-secundario: #6BD1FF;
     --bg-terciario: #141414;
-    --bg-button: #5081FB;
+    --bg-button: #5080fb;
     --font-branca: #FFFFFF;
     --font-branco-secundario: #ffffff36;
 
@@ -96,4 +96,49 @@ body{
 }
 .container__projeto input::placeholder{
     color: var(--font-branca);
+}
+.container__perso{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+.container__perso p{
+    font-size: 12px;
+    color: var(--font-branca);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.container__perso select{
+    outline: none;
+    border: solid 1px transparent;
+    font-size: 16px;
+    margin: 1em;
+    padding: 16px 156px 16px 14px;
+    border-radius: 10px;
+    background-color: var(--font-branco-secundario);
+    color: var(--font-branca);
+}
+.container__perso select option{
+    background-color: var(--bg-terciario);
+    color: var(--font-branca);
+}
+.botao-salvar{
+    outline: none;
+    border: solid 1px transparent;
+    background-color: var(--bg-button);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    font-size: 16px;
+}
+.cor{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0 1em 1em 1em;
+    height: 4em;
+    width: 92%;
+    padding: 0.25em;
 }
