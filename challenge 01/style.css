@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-principal: #051D3B;
+    --bg-secundario: #6BD1FF;
+    --bg-terciario: #141414;
+    --bg-button: #5081FB;
+    --font-branca: #FFFFFF;
+    --font-branco-secundario: #ffffff36;
+
+}
+
+body{
+    background-color: var(--bg-principal);
+}
+.container__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    text-align: center;
+}
+.container__header div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container__header div:last-child{
+    display: flex;
+    gap: 2em;
+}
+
+.container__codigo{
+    background-color: var(--bg-secundario);
+    padding: 2em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.code{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-terciario);
+    border-radius: 10px;
+}
+.code textarea{
+    font-size: 14px;
+    background: transparent;
+    color: var(--font-branca);
+    height: 300px;
+    outline: none;
+    border: 1px solid var(--bg-terciario);
+}
+.code div{
+    padding: 24px 16px;
+}
+.highlight{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em 1em;
+    border-radius: 10px;
+    background-color: #5080fb0e;
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-branca);
+}
+.container__projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+.container__projeto p{
+    font-size: 12px;
+    color: var(--font-branca);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.container__projeto input{
+    outline: none;
+    border: solid 1px transparent;
+    font-size: 16px;
+    margin: 1em;
+    padding: 16px 156px 16px 14px;
+    border-radius: 10px;
+    background-color: var(--font-branco-secundario);
+    color: var(--font-branca);
+}
+.container__projeto input:last-child{
+    padding-bottom: 2em;
+}
+.container__projeto input::placeholder{
+    color: var(--font-branca);
+}
