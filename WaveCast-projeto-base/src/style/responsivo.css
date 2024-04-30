@@ -24,13 +24,16 @@
  
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
     }
 
     .secao-vertical .cartao {
         background-color: transparent;
         padding: 0;
     }
-
+    .secao-horizontal .cartao{
+        column-gap: 0.25em; 
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1399px) {

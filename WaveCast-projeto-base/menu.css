@@ -1,0 +1,10 @@
+aside {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 2em;
+}
+
+.menu-lateral__logo{
+    justify-self: center;
+}
+
