@@ -65,6 +65,9 @@
     .secao-vertical .cartao {
         padding: 1.25rem;
     }
+    .menu-lateral{
+        width: 208px;
+    }
 
 }
 
@@ -73,6 +76,9 @@
     .navbar,
     .cabecalho__logo {
         display: none;
+    }
+    .menu-lateral{
+        width: 228px;
     }
 
 }
