@@ -9,6 +9,11 @@
         <link href="./assets/css/normalize.css" rel="stylesheet" />
         <link href="./assets/css/reset.css" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/banner.css">
+        <link rel="stylesheet" href="./assets/css/sobre.css">
+        <link rel="stylesheet" href="./assets/css/receitas.css">
+        <link rel="stylesheet" href="./assets/css/time.css">
+        <link rel="stylesheet" href="./assets/css/rodape.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -24,55 +29,79 @@
         </header>
         <main>
             <section>
-                <img src="./assets/img/banner.jpg" alt="">
-                <h1>Reaproveite melhor os alimentos!</h1>
-                <h2>Receitas para economizar e ganhar saúde</h2>
-                <p>Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
-            </section>
-            <section>
-                <div>
-                    <img src="./assets/img/receitas/tigela-de-abacate.jpg" alt="">
-                    <h3>Tigela de abacate</h3>
-                    <p>Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                <div class="banner">
+                    <img class="banner-img" src="./assets/img/banner.jpg" alt="">
+                    <h1 class="banner-titulo">Reaproveite melhor os alimentos!</h1>
                 </div>
-                <div>
-                    <img src="./assets/img/receitas/salada-de-kiwi.jpg" alt="">
-                    <h3>Salada de kiwi</h3>
-                    <p>Receita refrescante e cheia de vitaminas para seu café da manhã</p>
-                </div>
-                <div>
-                    <img src="./assets/img/receitas/prato-oriental.jpg" alt="">
-                    <h3>Prato oriental</h3>
-                    <p>Receita refrescante e cheia de vitaminas para seu café da manhã</p>
-                </div>
-                <div>
-                    <img src="./assets/img/receitas/pimentoes-a-juliana.jpg" alt="">
-                    <h3>Pimetões a juliana</h3>
-                    <p>Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                <div class="sobre">
+                    <h2 class="sobre-titulo">Receitas para economizar e ganhar saúde</h2>
+                    <p class="sobre-descricao">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
                 </div>
             </section>
-            <section>
-                <h2>Quem somos</h2>
-                <p>Conheça a comunidade por trás da iniciativa</p>
-                <div>
-                    <img src="./assets/img/pessoas/roberta.jpg" alt="">
-                    <h3>Roberta</h3>
-                    <p>Conteúdo</p>
+            <section class="lista-receitas">
+                <div class="receita">
+                    <img class="receita-img" src="./assets/img/receitas/tigela-de-abacate.jpg" alt="">
+                    <h3 class="receita-titulo">Tigela de abacate</h3>
+                    <p class="receita-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                    <button>Ver Receita</button>
                 </div>
-                <div>
-                    <img src="./assets/img/pessoas/marcela.jpg" alt="">
-                    <h3>Marcela</h3>
-                    <p>Chef de cozinha</p>
+                <div class="receita">
+                    <img class="receita-img" src="./assets/img/receitas/salada-de-kiwi.jpg" alt="">
+                    <h3 class="receita-titulo">Salada de kiwi</h3>
+                    <p class="receita-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                    <button>Ver Receita</button>
                 </div>
-                <div>
-                    <img src="./assets/img/pessoas/andreia.jpg" alt="">
-                    <h3>Andreia</h3>
-                    <p>Pequena produtora</p>
+                <div class="receita">
+                    <img class="receita-img" src="./assets/img/receitas/mix-de-vegetais.jpg" alt="">
+                    <h3 class="receita-titulo">Mix de vegetais</h3>
+                    <p class="receita-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                    <button>Ver Receita</button>
+                </div>
+                <div class="receita">
+                    <img class="receita-img" src="./assets/img/receitas/pimentoes-a-juliana.jpg" alt="">
+                    <h3 class="receita-titulo">Pimetões a juliana</h3>
+                    <p class="receita-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                    <button>Ver Receita</button>
+                </div>
+                <div class="receita">
+                    <img class="receita-img" src="./assets/img/receitas/prato-oriental.jpg" alt="">
+                    <h3 class="receita-titulo">Prato oriental</h3>
+                    <p class="receita-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                    <button>Ver Receita</button>
+                </div>
+                <div class="receita">
+                    <img class="receita-img" src="./assets/img/receitas/beterrabas-assadas.jpg" alt="">
+                    <h3 class="receita-titulo">Beterrabas assadas</h3>
+                    <p class="receita-descricao">Receita refrescante e cheia de vitaminas para seu café da manhã</p>
+                    <button>Ver Receita</button>
+                </div>
+            </section>
+            <section class="time">
+                    <h2 class="time-titulo">Quem somos</h2>
+                    <p class="time-descricao">Conheça a comunidade por trás da iniciativa</p>
+                <div class="componentes">
+                    <div class="componente">
+                        <img class="componente-img" src="./assets/img/pessoas/roberta.jpg" alt="">
+                        <h3 class="componente-nome">Roberta</h3>
+                        <p class="componente-funcao">Conteúdo</p>
+                    </div>
+                    <div class="componente">
+                        <img class="componente-img" src="./assets/img/pessoas/marcela.jpg" alt="">
+                        <h3 class="componente-nome">Marcela</h3>
+                        <p class="componente-funcao">Chef de cozinha</p>
+                    </div>
+                    <div class="componente">
+                        <img class="componente-img" src="./assets/img/pessoas/andreia.jpg" alt="">
+                        <h3 class="componente-nome">Andreia</h3>
+                        <p class="componente-funcao">Pequena produtora</p>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <h3>Contato</h3>
+        <footer class="rodape">
+            <a href="">
+                <h3>Contato</h3>
+            </a>
         </footer>
     </body>
 </html>

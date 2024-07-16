@@ -1,0 +1,12 @@
+.rodape {
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+    margin-top: 9rem;
+  }
+  .rodape a {
+    text-decoration: none;
+    color: #fdfdfd;
+  }

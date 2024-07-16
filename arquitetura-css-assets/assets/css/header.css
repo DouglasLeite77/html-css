@@ -29,3 +29,11 @@ header{
     color: black;
     font-weight: 500;
 }
+
+@media screen and (max-width: 768px){
+
+header{
+    justify-content: center;
+    padding: 0 1rem;
+}
+} 

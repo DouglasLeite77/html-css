@@ -1,0 +1,31 @@
+.sobre{
+    text-align: center;
+    margin: 70px 140px 40px 140px;
+}
+
+.sobre-titulo{
+    font-size: 3.5rem;
+    font-family: Pacifico, cursive;
+    color: #8D0606;
+}
+.sobre-descricao{
+    font-size: 2rem;
+    font-family: Roboto;
+    color: #8C8888;
+}
+@media screen and (max-width: 768px){
+    .sobre{
+        margin: 35px 60px 60px 60px;
+    }
+    .sobre-titulo{
+        font-size: 2rem;
+    }
+    .sobre-descricao{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1430px){
+    .sobre{
+        margin: 35px 60px 60px 60px;
+    }
+}
