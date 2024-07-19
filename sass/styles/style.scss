@@ -1,3 +1,6 @@
+//@use './abstract/variaveis';// exemplo de import
+@use './abstract/mixins';
+
 body{
     padding: 0;
     margin: 0;
@@ -11,6 +14,8 @@ body{
     --secundaria-lilas: #CAD4FA;
     --secundaria-verde: #E8F5C8;
     --secundaria-gradiente: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+    --font-Mont: 'Montserrat';
+    --font-Krona: 'Krona one';
 }
 
 header{
@@ -40,9 +45,93 @@ header{
             }
         }
     }
-    section.home{
+    #home{
         display: flex;
-
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1048px;
+        @include mixins.margem-central(80%);
+        margin-top: 3rem;
+            .textos-home {
+            width: 464px;
+             }
+       h1 {
+        font-size: 42px;
+        color: var(--primaria-escuro);
+        margin-bottom: 2rem;
+        font-family: var(--font-Krona);
+        span{
+            color: var(--primaria-vibrante);
+        }
+      }
+      .img-home{
+        width: 486px;
+        img{
+            width: 100%;
+            }
+        }
+        .btn-main{
+            width: 220px;
+            height: 56px;
+            background: var(--primaria-vibrante);
+            border-radius: 40px;
+            font-size: 22px;
+            color: #FFFFFF;
+            border: none;
+      }
+    }
+}
+#nosso-espaco{
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 4rem;
+    h2{
+        font-size: 31px;
+        font-family: var(--font-Krona);
+        color: var(--primaria-vibrante);
+        margin: 0;
+    }
+    p{
+        font-size: 22px;
+        font-family: var(--font-Mont);
+        color: var(--primaria-escuro);
+    }
+    .tecnologia{
+        display: flex;
+        gap: 5.5rem;
+        .espaco-tecnologia{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .separador{
+                width: 100%;
+            }
+        }
+        img{
+            width: 510px;
+        }
+    }
+    .elevando{
+        display: grid;
+        gap: 6rem;
+        .espaco-elevando{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .imgs-elevando{
+            display: flex;
+            gap: 2rem;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .espaco-elevando{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
     }
 }
 

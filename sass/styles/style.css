@@ -11,6 +11,8 @@ body {
   --secundaria-lilas: #CAD4FA;
   --secundaria-verde: #E8F5C8;
   --secundaria-gradiente: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  --font-Mont: "Montserrat";
+  --font-Krona: "Krona one";
 }
 
 header {
@@ -41,6 +43,93 @@ header nav ul li a {
   text-decoration: none;
   color: var(--primaria-escuro);
 }
-header section.home {
+header #home {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1048px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+header #home .textos-home {
+  width: 464px;
+}
+header #home h1 {
+  font-size: 42px;
+  color: var(--primaria-escuro);
+  margin-bottom: 2rem;
+  font-family: var(--font-Krona);
+}
+header #home h1 span {
+  color: var(--primaria-vibrante);
+}
+header #home .img-home {
+  width: 486px;
+}
+header #home .img-home img {
+  width: 100%;
+}
+header #home .btn-main {
+  width: 220px;
+  height: 56px;
+  background: var(--primaria-vibrante);
+  border-radius: 40px;
+  font-size: 22px;
+  color: #FFFFFF;
+  border: none;
+}
+
+#nosso-espaco {
+  display: flex;
+  max-width: 1040px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+#nosso-espaco h2 {
+  font-size: 31px;
+  font-family: var(--font-Krona);
+  color: var(--primaria-vibrante);
+  margin: 0;
+}
+#nosso-espaco p {
+  font-size: 22px;
+  font-family: var(--font-Mont);
+  color: var(--primaria-escuro);
+}
+#nosso-espaco .tecnologia {
+  display: flex;
+  gap: 5.5rem;
+}
+#nosso-espaco .tecnologia .espaco-tecnologia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#nosso-espaco .tecnologia .espaco-tecnologia .separador {
+  width: 100%;
+}
+#nosso-espaco .tecnologia img {
+  width: 510px;
+}
+#nosso-espaco .elevando {
+  display: grid;
+  gap: 6rem;
+}
+#nosso-espaco .elevando .espaco-elevando {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#nosso-espaco .elevando .imgs-elevando {
+  display: flex;
+  gap: 2rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#nosso-espaco .elevando .espaco-elevando {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }/*# sourceMappingURL=style.css.map */
